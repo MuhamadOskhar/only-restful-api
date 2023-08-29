@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JurusanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 // START DATA JURUSAN
 Route::get('/jurusan', [JurusanController::class, 'get']);
-Route::get('/jurusan/untuk-tabel', [JurusanController::class, 'getUntukTabel']);
-Route::get('/jurusan/untuk-input-option', [JurusanController::class, 'getUntukInputOption']);
-Route::get('/jurusan/find', [JurusanController::class, 'find']);
 Route::post('/jurusan', [JurusanController::class, 'create']);
 Route::put('/jurusan', [JurusanController::class, 'update']);
 Route::put('/jurusan/pulihkan', [JurusanController::class, 'restore']);
